@@ -16,7 +16,7 @@ pipeline{
     }
     stage ('build') {
       steps{
-        sh '$(npm bin)/ng build --prod --build-optimizer'
+        sh '$(npm bin)/ng build --prod'
       }
     }
     stage ('build image') {
